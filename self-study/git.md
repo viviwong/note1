@@ -1,6 +1,68 @@
 ---
-title: 响应式设计
+title: git
 ---
+
+
+### 下载git
+
+[git主页](https://git-scm.com/)
+- mac
+1.安装包版本管理工具homebrew 
+2.安装git brew install git
+3.查看版本号 git --version
+
+- window
+4.[window版下载地址](https://git-scm.com/download/win) 
+5.安装
+
+
+创建目录 mkdir
+查看文件 ls
+
+
+### 本地文件上传到github上 
+
+文件变成本地git仓库       git init
+查看所有文件          ls -a 本地多了一个文件夹 .git存放改版历史
+所有文件添加到git版本历史中   git add -A 
+制作版本            git commit -m "版本留言"
+SSH和HTTPS地址作用         连接远程github仓库
+SSH地址每次上传不需要输入密码  需要添加SSHKEY
+临时使用用HTTPS
+
+HTTPS连接远程github地址     git remote add origin https//
+上传到github中          git push -u origin master 
+
+本地内容提交到github中三步      git add -A 
+                git commit -m"message" 
+                git push
+
+create a new repository on the command line
+echo "# xiaohaizi123" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/jasonboy345/xiaohaizi123.git
+git push -u origin master
+
+push an existing repository from the command line
+git remote add origin https://github.com/jasonboy345/xiaohaizi123.git
+git push -u origin master
+
+
+### gitpage
+
+gitpage项目站点形式托管页面 页面不能放到master分支上
+才能新分支         git checkout -b gh-pages   分支名必须叫gh-pages
+查看分支        git branch
+本地分支推送到远端   git push -u origin gh-pages
+gitpage页面url      http://用户名.github.io/项目名
+
+
+
+
+
+***
 
 ### 为何移动设备优先？
 
